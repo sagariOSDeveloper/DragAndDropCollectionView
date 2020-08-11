@@ -50,7 +50,6 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout {
         myCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         view.addSubview(myCollectionView!)
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
-//        let gesture = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
         myCollectionView?.addGestureRecognizer(gesture)
     }
     
